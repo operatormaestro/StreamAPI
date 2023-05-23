@@ -24,7 +24,7 @@ public class Main {
                 .filter(x -> x.getSex() == Sex.MAN)
                 .filter(x -> x.getAge() >= 18 && x.getAge() <= 27)
                 .map(Person::getFamily)
-                .collect(Collectors.<String>toList());
+                .collect(Collectors.toList());
         List<String> workers = stream2
                 .filter(x -> x.getAge() >= 18)
                 .filter(x -> x.getEducation() == Education.HIGHER)
